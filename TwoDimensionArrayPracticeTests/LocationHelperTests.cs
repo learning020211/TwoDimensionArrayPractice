@@ -22,6 +22,9 @@ namespace TwoDimensionArrayPractice.Tests
         [DataRow(@"0,1,2
                    3,4,5,
                    6,7,8", 3, 2, true)]
+        [DataRow(@"0,1,2
+                   3,4,5,
+                   6,7,8", -1, 0, true)]
         public void SetCurrentLocationExceptionTest(string arrayItems, int row, int column, bool exception)
         {
             var helper = new LocationHelper<int>(arrayItems.To2DIntArray());

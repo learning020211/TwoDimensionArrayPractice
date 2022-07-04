@@ -26,6 +26,8 @@ namespace TwoDimensionArrayPractice
         {
             if (newRowIndex >= rowCount) throw new ArgumentOutOfRangeException(nameof(newRowIndex));
             if (newColumnIndex >= columnCount) throw new ArgumentOutOfRangeException(nameof(newColumnIndex));
+            if (newRowIndex < 0) throw new ArgumentOutOfRangeException(nameof(newRowIndex));
+            if (newColumnIndex < 0) throw new ArgumentOutOfRangeException(nameof(newColumnIndex));
 
             currentLocation.RowIndex = newRowIndex;
             currentLocation.ColumnIndex = newColumnIndex;
